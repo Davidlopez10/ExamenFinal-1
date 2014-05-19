@@ -48,13 +48,13 @@ try{
             temp=cambio.charAt(0);//se saco la primera posicion
             aux=cambio.substring(1,cambio.length());//este es el resto de  los otros numeros
             cambio2=aux+temp;//nuevo numero
-            System.out.println(cambio2+"  el primer cambio");
+            //System.out.println(cambio2+"  el primer cambio");
             numero=Integer.parseInt(cambio2);
 
             while(inferior<superior){
 //C:\Users\David\Documents\GitHub\ExamenFinal-1\NumerosReciclados\dataset1.txt
                 if(cambio.equalsIgnoreCase(cambio2)){
-                    System.out.println("El primer if");
+                 //   System.out.println("El primer if");
                     inferior++;
                     cambio=String.valueOf(inferior);//conversion de int a cadena
                     //temp=cambio.charAt(0);//se saco la primera posicion
@@ -63,14 +63,14 @@ try{
                     numero=Integer.parseInt(cambio);
 
                  } else if(numero>superior){
-               System.out.println(numero+"  el primer if");
+               //System.out.println(numero+"  el primer if");
                     cambio3=String.valueOf(numero);//conversion de int a cadena
                     temp=cambio3.charAt(0);//se saco la primera posicion
                     aux=cambio3.substring(1,cambio3.length());//este es el resto de  los otros numeros
                     cambio2=aux+temp;//nuevo numero
                     numero=Integer.parseInt(cambio2);
                  }else if(numero<inferior){
-                    System.out.println(numero+"  segundo if");
+                //    System.out.println(numero+"  segundo if");
                     cambio3=String.valueOf(numero);//conversion de int a cadena
                     temp=cambio3.charAt(0);//se saco la primera posicion
                     aux=cambio3.substring(1,cambio3.length());//este es el resto de  los otros numeros
@@ -78,7 +78,7 @@ try{
                     numero=Integer.parseInt(cambio2);
                 }
                 else {//if(numero>inferior && numero<superior)
-                    System.out.println(numero+"  ultimo if");
+                 //   System.out.println(numero+"  ultimo if");
                     cambio3=String.valueOf(numero);//conversion de int a cadena
                     temp=cambio3.charAt(0);//se saco la primera posicion
                     aux=cambio3.substring(1,cambio3.length());//este es el resto de  los otros numeros
@@ -87,10 +87,10 @@ try{
                     numero=Integer.parseInt(cambio2);
                     System.out.println( "reciclable ");
                     reciclable++;
-                Reciclar=Reciclar+reciclable+";";
+                    Reciclar=Reciclar+reciclable+";";
                 }
 
-                break;
+               break;
             }
         }else if(inferior==superior){
             System.out.println("Los limites son iguales");
